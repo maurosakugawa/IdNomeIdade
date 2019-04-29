@@ -1,3 +1,12 @@
-<p>
-tabela works!
-</p>
+<table>
+  <thead>
+    <tr><th>ID </th><th>NOME </th><th>IDADE </th></tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of servico.lista">
+      <td>{{c.id}}</td>
+      <td>{{c.nome}}</td>
+      <td>{{c.idade}}</td>
+    </tr>
+  </tbody>
+</table>
